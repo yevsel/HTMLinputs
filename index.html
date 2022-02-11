@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+        <div>
+            <label for="Name">Name</label>
+            <input required placeholder="username" type="text" name="Username" id="Name">
+        </div>
+        <!-- EMAIL -->
+        <div>
+            <label for="email">Email</label>
+            <input required placeholder="email" type="email" name="Email" id="email">
+        </div>
+        <!-- AGE -->
+        <div>
+            <label for="age">Age</label>
+            <input step="15" min='10' max='200' type="number" name="Age" id="age">
+        </div>
+        <!-- DATE -->
+        <div>
+            <label for="date">BirthDate</label>
+            <input type="date" name="Date" id="date">
+        </div>
+        <!-- CHECKBOX -->
+        <div>
+            <label for="check">Reminder</label>
+            <input type="checkbox" name="Banana" id="check" checked>
+        </div>
+        <!-- RADIO -->
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="Gender" id="male" value='male'>
+            <label for="femala">Female</label>
+            <input type="radio" name="Gender" id="female" value='female'>
+        </div>
+        <!-- SELECT -->
+        <div>
+            <label for="select">Eye Color</label>
+            <select name="Eye color" id="select" >
+                <option value="Green">Green</option>
+                <option value="Red">Red</option>
+                <option value="Yellow">Yellow</option>
+            </select>
+        </div>
+        <!-- TEXT AREA -->
+        <div>
+            <label for="text-area">Bio</label>
+            <textarea placeholder="Comments go here" name="Bio" id="text-area" cols="30" rows="10"></textarea>
+        </div>
+        <!-- Hidden -->
+        <input type="hidden" name="hidden"  value='Hello from ghana' id="">
+        <!-- FILE -->
+        <div>
+            <label for="file">File</label>
+            <input type="file" name="File" id="file">
+        </div>
+        <!-- PHONE so phones can enter numbers-->
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" name="Phone" id="phone">
+        </div>
+        <!-- URL -->
+        <div>   
+            <label for="url">URL</label>
+            <input type="url" name="URL" id="url">
+        </div>
+        <!-- COLOR  -->
+        <div>
+            <label for="color">Color</label>
+            <input type="color" name="Color" id="color">
+        </div>
+        <!-- PASSWORD -->
+        <div>
+            <label for="Password">Password</label>
+            <input required placeholder="password" type="password" name="Password" id="Password">
+        </div>
+        <button type="reset">reset</button>
+        <button type='submit'>Submit</button>
+    </form>
+    <a href="./results.html">Results</a>
+</body>
+</html>
